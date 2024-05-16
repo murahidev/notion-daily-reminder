@@ -1,0 +1,43 @@
+.atkinson-hyperlegible-regular {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+.atkinson-hyperlegible-bold {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+    
+.atkinson-hyperlegible-regular-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+    
+.atkinson-hyperlegible-bold-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.YearPosition {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    font-size: 50vh;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Relative positioning */
+}
+  
+.YearPositionTwo {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 8.5vh;
+    font-style: normal;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute; /* Absolute positioning */
+    top: calc(50vh + 20px); /* Position it below YearPosition, adjust as needed */
+    left: 5vw; /* Align it with the left edge of the container */
+}

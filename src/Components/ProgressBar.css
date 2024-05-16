@@ -1,0 +1,39 @@
+.atkinson-hyperlegible-regular {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+.atkinson-hyperlegible-bold {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+    
+.atkinson-hyperlegible-regular-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+    
+.atkinson-hyperlegible-bold-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.StartTime {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    font-size: clamp(5px, 2vw, 50px);
+}
+
+.EndTime {
+
+}
+
+.PopUpText {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    font-size: clamp(5px, 3vw, 50px);
+}
