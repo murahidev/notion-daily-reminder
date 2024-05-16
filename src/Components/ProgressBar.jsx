@@ -2,7 +2,7 @@ import "./ProgressBar.css"
 import React, { useEffect, useState } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 
-export default function ProgressBar({displayMode, setDisplayMode}){
+export default function ProgressBar({darkMode, setDarkMode}){
 
     const [progress, setProgress] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
@@ -30,6 +30,30 @@ export default function ProgressBar({displayMode, setDisplayMode}){
     const handleMouseLeave = () => {
         setIsHovered(false);
     }
+
+    const lightModeToggle = () => {
+        // True = Light
+        if (darkMode === true) {
+            console.log("Already Light");
+        }
+        else {
+            const updatedDarkMode = true;
+            setDarkMode(updatedDarkMode);
+            localStorage.setItem("colorMode", updatedDarkMode);
+        }
+    }
+
+    const darkModeToggle = () => {
+        // False = Dark
+        if (darkMode === false) {
+            console.log("Already Dark")
+        }
+        else {
+            const updatedDarkMode = false;
+            setDarkMode(updatedDarkMode);
+            localStorage.setItem("colorMode", updatedDarkMode);
+        }
+    }
     
     return(
         <div className="flex justify-around items-center">
@@ -40,7 +64,12 @@ export default function ProgressBar({displayMode, setDisplayMode}){
             )}
 
             <div className="StartTIme">
-                <FiSun />
+                <button 
+                    className="Sun hover:bg-gray-500 rounded"
+                    onClick={lightModeToggle}
+                >
+                    <FiSun />
+                </button>
             </div>
 
             <div
@@ -57,7 +86,12 @@ export default function ProgressBar({displayMode, setDisplayMode}){
             </div>
 
             <div className="EndTime">
-                <FiMoon />
+                <button 
+                    className="Moon hover:bg-gray-500 rounded"
+                    onClick={darkModeToggle}
+                >
+                    <FiMoon />
+                </button>
             </div>
         </div>
     )

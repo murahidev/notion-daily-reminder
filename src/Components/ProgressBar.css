@@ -37,3 +37,11 @@
     font-style: normal;
     font-size: clamp(5px, 3vw, 50px);
 }
+
+.Sun {
+    padding: 2vh;
+}
+
+.Moon {
+    padding: 2vh;
+}
