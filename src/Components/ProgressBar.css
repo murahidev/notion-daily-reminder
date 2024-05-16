@@ -28,10 +28,6 @@
     font-size: clamp(5px, 2vw, 50px);
 }
 
-.EndTime {
-
-}
-
 .PopUpText {
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-style: normal;
