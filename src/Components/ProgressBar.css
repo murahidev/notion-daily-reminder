@@ -31,7 +31,7 @@
 .PopUpText {
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-style: normal;
-    font-size: clamp(5px, 3vw, 50px);
+    font-size: clamp(5px, 4vw, 50px);
 }
 
 .Sun {

@@ -39,5 +39,5 @@
     padding: 0;
     position: absolute; /* Absolute positioning */
     top: calc(50vh + 20px); /* Position it below YearPosition, adjust as needed */
-    left: 5vw; /* Align it with the left edge of the container */
+    align-items: center;
 }

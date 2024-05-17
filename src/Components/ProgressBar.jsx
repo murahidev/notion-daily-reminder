@@ -58,7 +58,7 @@ export default function ProgressBar({darkMode, setDarkMode}){
     return(
         <div className="flex justify-around items-center">
             {isHovered && (
-                    <div className="PopUpText absolute bottom-2.5">
+                    <div className="PopUpText absolute bottom-2.5 p-1">
                         {progress}% of the day has passed
                     </div>
             )}
@@ -74,7 +74,7 @@ export default function ProgressBar({darkMode, setDarkMode}){
 
             <div
                 className="w-full bg-gray-300 h-1 rounded"
-                style={{width: "70vw" }}
+                style={{width: "60vw" }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
