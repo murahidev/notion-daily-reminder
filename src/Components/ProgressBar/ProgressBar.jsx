@@ -73,13 +73,13 @@ export default function ProgressBar({darkMode, setDarkMode}){
             </div>
 
             <div
-                className="w-full bg-gray-300 h-1 rounded"
+                className="w-full bg-gray-300 h-2 rounded"
                 style={{width: "60vw" }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
                 <div
-                    className="bg-green-500 h-1 rounded"
+                    className="bg-green-500 h-2 rounded"
                     style={{width: `${progress}%`}}
                 > 
                 </div>
